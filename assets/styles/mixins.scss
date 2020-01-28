@@ -1,0 +1,33 @@
+@mixin btnStyle {
+    background: transparent;
+    color: white;
+    border: white 1px solid;
+}
+
+@mixin form_btn {
+    margin-top: 1rem;
+    width: 19%;
+    border: 3px solid #0c9aec;
+    background: none;
+    color: #0c9aec;
+}
+
+// media breakpoints
+
+@mixin mobile_breakPoint() {
+    @media (max-width: 576px) {
+        @content;
+    }
+}
+
+@mixin tablet_breakPoint() {
+    @media (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin FIVE_SE () {
+    @media (max-width: 320px) {
+        @content;
+    }
+}

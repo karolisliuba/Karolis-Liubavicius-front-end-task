@@ -1,0 +1,13 @@
+* {
+  font-family: "Open Sans", sans-serif;
+  @include FIVE_SE() {
+    font-size: 13px;
+    header {
+      h1 {
+        span {
+            font-size: 33px;
+        }
+      }
+    }
+  }
+}

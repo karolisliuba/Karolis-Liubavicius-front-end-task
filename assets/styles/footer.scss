@@ -1,0 +1,28 @@
+footer {
+  background: #1e2123;
+  padding-top: 10vh;
+  .footer_text {
+    color: #858585;
+    width: 60%;
+    padding: 1rem;
+  }
+  .footer_navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-top: 1rem;
+    button {
+      background: none;
+      border: none;
+      color: white;
+      margin-bottom: 0.5rem;
+    }
+  }
+  .rights_logo {
+    width: 100%;
+    text-align: right;
+    color: $font_color;
+    font-size: 11px;
+    line-height: 22px;
+  }
+}

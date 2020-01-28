@@ -1,0 +1,139 @@
+main {
+  // Body of welcome part and short text
+  padding: 0;
+  .mobile_img_card {
+    @include mobile_breakPoint() {
+      margin-top: 10vh;
+    }
+  }
+  .tablet_fit_content {
+    @include tablet_breakPoint() {
+      display: none;
+    }
+  }
+  .welcomeBar {
+    background: $blue_background;
+    color: white;
+    font-weight: 700;
+    padding: 46px;
+    .learn-more-btn {
+      width: 100%;
+      justify-content: flex-end;
+      align-items: flex-end;
+      button {
+        @include btnStyle;
+      }
+    }
+  }
+
+  //   Image align
+  .chainedImage {
+    width: 100%;
+  }
+  .img_body {
+    background-color: #d7d7d7;
+    padding: 10px;
+    .image_text {
+      padding: 52px;
+      text-align: center;
+    }
+  }
+
+  // Text on the left, API table right
+  .webdev_wireframe {
+    .api_table {
+      background: white;
+      padding: 46px;
+      margin-right: -70px;
+      @include mobile_breakPoint() {
+        margin-right: 0;
+        .mobile_webText {
+          margin-top: 50px;
+        }
+      }
+      @include tablet_breakPoint() {
+        margin-right: 0;
+      }
+      #append_API {
+        tr {
+          border-bottom: 1px solid #1e2123;
+          margin-top: 2px;
+        }
+      }
+    }
+    .webdev_text {
+      p,
+      h5 {
+        color: $font_color;
+      }
+      margin-top: 10vh;
+      padding-bottom: 100px;
+    }
+    .wireframe_text {
+      padding-bottom: 45px;
+      padding-left: 40px;
+      margin-left: 25px;
+      margin-top: 10vh;
+      color: $font_color;
+      @include mobile_breakPoint() {
+        padding-left: 0;
+        margin-left: 0;
+        margin-top: 0;
+      }
+    }
+    margin-top: 10vh;
+    width: 100%;
+    background: $blue_background;
+  }
+
+  // contact text, and input fields part
+  .contact_mobile_version {
+    @include mobile_breakPoint() {
+      margin-right: 0;
+      margin-left: 0;
+    }
+  }
+  .contact_heading {
+    padding: 0;
+    font-weight: bold;
+    color: #1e2123;
+    font-size: 41px;
+    margin-top: 10vh;
+    text-transform: uppercase;
+    width: 100%;
+  }
+
+  .contact_text {
+    margin-top: 2rem;
+    width: 100%;
+  }
+
+  .form_adapt {
+    .form_btn {
+      @include form_btn;
+    }
+    label {
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+    textarea {
+      border: 3px solid #e8e8e9;
+    }
+    input {
+      border: 3px solid #e8e8e9;
+      height: 5vh;
+    }
+    input:focus {
+      border: 3px solid black;
+    }
+    textarea:focus {
+      border: 3px solid black;
+    }
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    @include mobile_breakPoint() {
+      margin-right: 0;
+    }
+  }
+}
